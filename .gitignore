@@ -17,6 +17,25 @@ DerivedData
 !default.perspectivev3
 xcuserdata
 .DS_Store
+project.xcworkspace/
+xcuserdata/
+*.xcuserstate
+
+# Mac OS X
+*.DS_Store
+
+# Generated files
+*.o
+*.pyc
+
+
+#Python modules
+MANIFEST
+dist/
+build/
+
+# Backup files
+*~.nib
 
 ## Other
 *.xccheckout
