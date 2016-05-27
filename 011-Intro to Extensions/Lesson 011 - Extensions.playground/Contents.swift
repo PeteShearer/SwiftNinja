@@ -14,7 +14,7 @@ extension Post {
     }
 }
 
-print(lesson001.heading)
+print(lesson001.heading) // Prints Lesson 001 - Variables by Pete
 
 
 // We can extend system classes
