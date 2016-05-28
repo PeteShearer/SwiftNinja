@@ -58,8 +58,11 @@ extension String: BiggieSize {
     }
 }
 
-var name:BiggieSize = "Pete"
-print(name.doubleUp) // <-- prints PetePete
+func usingAProtocolAsAParameter(input: BiggieSize) {
+    print(input.doubleUp)
+}
+
+usingAProtocolAsAParameter("Pete") // <-- prints PetePete
 
 protocol A {
     var foo: String {get set}
