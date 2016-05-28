@@ -66,15 +66,16 @@ usingAProtocolAsAParameter("Pete") // <-- prints PetePete
 
 protocol A {
     var foo: String {get set}
+    func talk() -> Void
 }
 
 protocol B {
     var bar: String {get set}
+    func talk() -> Void
 }
 
 func demonstrateIntersection(input: protocol<A, B>) -> Void {
-    print (input.foo)
-    print (input.bar)
+    input.talk()
 }
 
 class onlyHasA: A {
@@ -83,6 +84,10 @@ class onlyHasA: A {
     init(foo: String) {
         self.foo = foo
     }
+    
+    func talk() -> Void {
+        print(self.foo)
+    }
 }
 
 class onlyHasB: B {
@@ -90,6 +95,10 @@ class onlyHasB: B {
     
     init(bar: String) {
         self.bar = bar
+    }
+    
+    func talk() -> Void {
+        print(self.bar)
     }
 }
 
@@ -100,6 +109,11 @@ class hasBoth: A, B {
     init(foo: String, bar: String) {
         self.foo = foo
         self.bar = bar
+    }
+    
+    func talk() -> Void {
+        print(foo)
+        print(bar)
     }
 }
 
