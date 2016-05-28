@@ -71,11 +71,12 @@ protocol A {
 
 protocol B {
     var bar: String {get set}
-    func talk() -> Void
+    func talkAlso() -> Void
 }
 
 func demonstrateIntersection(input: protocol<A, B>) -> Void {
     input.talk()
+    input.talkAlso()
 }
 
 class onlyHasA: A {
@@ -97,7 +98,7 @@ class onlyHasB: B {
         self.bar = bar
     }
     
-    func talk() -> Void {
+    func talkAlso() -> Void {
         print(self.bar)
     }
 }
@@ -113,6 +114,9 @@ class hasBoth: A, B {
     
     func talk() -> Void {
         print(foo)
+    }
+    
+    func talkAlso() -> Void {
         print(bar)
     }
 }
