@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F821818E1E149C4C0026787E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F821818D1E149C4C0026787E /* AppDelegate.swift */; };
+		F82181901E149C4C0026787E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F821818F1E149C4C0026787E /* ViewController.swift */; };
+		F82181931E149C4C0026787E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82181911E149C4C0026787E /* Main.storyboard */; };
+		F82181951E149C4C0026787E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F82181941E149C4C0026787E /* Assets.xcassets */; };
+		F82181981E149C4C0026787E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82181961E149C4C0026787E /* LaunchScreen.storyboard */; };
+		F82181A01E149C660026787E /* Quicksand_Dash.otf in Resources */ = {isa = PBXBuildFile; fileRef = F821819F1E149C660026787E /* Quicksand_Dash.otf */; };
+		F82181A21E149C740026787E /* Quicksand-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F82181A11E149C740026787E /* Quicksand-LightItalic.otf */; };
+		F82181A41E149C7F0026787E /* SIL Open Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = F82181A31E149C7F0026787E /* SIL Open Font License.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F821818A1E149C4C0026787E /* Fontly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fontly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F821818D1E149C4C0026787E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F821818F1E149C4C0026787E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F82181921E149C4C0026787E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F82181941E149C4C0026787E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F82181971E149C4C0026787E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F82181991E149C4C0026787E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F821819F1E149C660026787E /* Quicksand_Dash.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quicksand_Dash.otf; sourceTree = "<group>"; };
+		F82181A11E149C740026787E /* Quicksand-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-LightItalic.otf"; sourceTree = "<group>"; };
+		F82181A31E149C7F0026787E /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SIL Open Font License.txt"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F82181871E149C4C0026787E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F82181811E149C4C0026787E = {
+			isa = PBXGroup;
+			children = (
+				F821818C1E149C4C0026787E /* Fontly */,
+				F821818B1E149C4C0026787E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F821818B1E149C4C0026787E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F821818A1E149C4C0026787E /* Fontly.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F821818C1E149C4C0026787E /* Fontly */ = {
+			isa = PBXGroup;
+			children = (
+				F821818D1E149C4C0026787E /* AppDelegate.swift */,
+				F821818F1E149C4C0026787E /* ViewController.swift */,
+				F82181911E149C4C0026787E /* Main.storyboard */,
+				F82181941E149C4C0026787E /* Assets.xcassets */,
+				F821819F1E149C660026787E /* Quicksand_Dash.otf */,
+				F82181A11E149C740026787E /* Quicksand-LightItalic.otf */,
+				F82181A31E149C7F0026787E /* SIL Open Font License.txt */,
+				F82181961E149C4C0026787E /* LaunchScreen.storyboard */,
+				F82181991E149C4C0026787E /* Info.plist */,
+			);
+			path = Fontly;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F82181891E149C4C0026787E /* Fontly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F821819C1E149C4C0026787E /* Build configuration list for PBXNativeTarget "Fontly" */;
+			buildPhases = (
+				F82181861E149C4C0026787E /* Sources */,
+				F82181871E149C4C0026787E /* Frameworks */,
+				F82181881E149C4C0026787E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fontly;
+			productName = Fontly;
+			productReference = F821818A1E149C4C0026787E /* Fontly.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F82181821E149C4C0026787E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Peter Shearer";
+				TargetAttributes = {
+					F82181891E149C4C0026787E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XV5UP6YVSA;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F82181851E149C4C0026787E /* Build configuration list for PBXProject "Fontly" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F82181811E149C4C0026787E;
+			productRefGroup = F821818B1E149C4C0026787E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F82181891E149C4C0026787E /* Fontly */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F82181881E149C4C0026787E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82181981E149C4C0026787E /* LaunchScreen.storyboard in Resources */,
+				F82181951E149C4C0026787E /* Assets.xcassets in Resources */,
+				F82181931E149C4C0026787E /* Main.storyboard in Resources */,
+				F82181A41E149C7F0026787E /* SIL Open Font License.txt in Resources */,
+				F82181A01E149C660026787E /* Quicksand_Dash.otf in Resources */,
+				F82181A21E149C740026787E /* Quicksand-LightItalic.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F82181861E149C4C0026787E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82181901E149C4C0026787E /* ViewController.swift in Sources */,
+				F821818E1E149C4C0026787E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F82181911E149C4C0026787E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F82181921E149C4C0026787E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F82181961E149C4C0026787E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F82181971E149C4C0026787E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F821819A1E149C4C0026787E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F821819B1E149C4C0026787E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F821819D1E149C4C0026787E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XV5UP6YVSA;
+				INFOPLIST_FILE = Fontly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.swiftninja.Fontly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F821819E1E149C4C0026787E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XV5UP6YVSA;
+				INFOPLIST_FILE = Fontly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.swiftninja.Fontly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F82181851E149C4C0026787E /* Build configuration list for PBXProject "Fontly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F821819A1E149C4C0026787E /* Debug */,
+				F821819B1E149C4C0026787E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F821819C1E149C4C0026787E /* Build configuration list for PBXNativeTarget "Fontly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F821819D1E149C4C0026787E /* Debug */,
+				F821819E1E149C4C0026787E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F82181821E149C4C0026787E /* Project object */;
+}
