@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FE61A64C01A69BBEA2B2440 /* Pods_Hudly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98EF29D6C1A4F5904924096 /* Pods_Hudly.framework */; };
+		F8CFBAF21E1E9BDA00BE6C5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CFBAF11E1E9BDA00BE6C5E /* AppDelegate.swift */; };
+		F8CFBAF41E1E9BDA00BE6C5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CFBAF31E1E9BDA00BE6C5E /* ViewController.swift */; };
+		F8CFBAF71E1E9BDA00BE6C5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8CFBAF51E1E9BDA00BE6C5E /* Main.storyboard */; };
+		F8CFBAF91E1E9BDA00BE6C5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CFBAF81E1E9BDA00BE6C5E /* Assets.xcassets */; };
+		F8CFBAFC1E1E9BDA00BE6C5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8CFBAFA1E1E9BDA00BE6C5E /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A98EF29D6C1A4F5904924096 /* Pods_Hudly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hudly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE6A11E73DD14C3D005371A /* Pods-Hudly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hudly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hudly/Pods-Hudly.debug.xcconfig"; sourceTree = "<group>"; };
+		EE6764DFE85B05D5270DEA74 /* Pods-Hudly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hudly.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hudly/Pods-Hudly.release.xcconfig"; sourceTree = "<group>"; };
+		F8CFBAEE1E1E9BDA00BE6C5E /* Hudly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hudly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8CFBAF11E1E9BDA00BE6C5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8CFBAF31E1E9BDA00BE6C5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F8CFBAF61E1E9BDA00BE6C5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8CFBAF81E1E9BDA00BE6C5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8CFBAFB1E1E9BDA00BE6C5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F8CFBAFD1E1E9BDA00BE6C5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8CFBAEB1E1E9BDA00BE6C5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE61A64C01A69BBEA2B2440 /* Pods_Hudly.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10CFFFAEE44D153CD87D1BB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A98EF29D6C1A4F5904924096 /* Pods_Hudly.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4834C85CC89E7CE1E51B0C1D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DFE6A11E73DD14C3D005371A /* Pods-Hudly.debug.xcconfig */,
+				EE6764DFE85B05D5270DEA74 /* Pods-Hudly.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F8CFBAE51E1E9BDA00BE6C5E = {
+			isa = PBXGroup;
+			children = (
+				F8CFBAF01E1E9BDA00BE6C5E /* Hudly */,
+				F8CFBAEF1E1E9BDA00BE6C5E /* Products */,
+				4834C85CC89E7CE1E51B0C1D /* Pods */,
+				10CFFFAEE44D153CD87D1BB5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F8CFBAEF1E1E9BDA00BE6C5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8CFBAEE1E1E9BDA00BE6C5E /* Hudly.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8CFBAF01E1E9BDA00BE6C5E /* Hudly */ = {
+			isa = PBXGroup;
+			children = (
+				F8CFBAF11E1E9BDA00BE6C5E /* AppDelegate.swift */,
+				F8CFBAF31E1E9BDA00BE6C5E /* ViewController.swift */,
+				F8CFBAF51E1E9BDA00BE6C5E /* Main.storyboard */,
+				F8CFBAF81E1E9BDA00BE6C5E /* Assets.xcassets */,
+				F8CFBAFA1E1E9BDA00BE6C5E /* LaunchScreen.storyboard */,
+				F8CFBAFD1E1E9BDA00BE6C5E /* Info.plist */,
+			);
+			path = Hudly;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8CFBAED1E1E9BDA00BE6C5E /* Hudly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8CFBB001E1E9BDA00BE6C5E /* Build configuration list for PBXNativeTarget "Hudly" */;
+			buildPhases = (
+				22639101386B29521314273F /* [CP] Check Pods Manifest.lock */,
+				F8CFBAEA1E1E9BDA00BE6C5E /* Sources */,
+				F8CFBAEB1E1E9BDA00BE6C5E /* Frameworks */,
+				F8CFBAEC1E1E9BDA00BE6C5E /* Resources */,
+				1DD986C375543405BD063288 /* [CP] Embed Pods Frameworks */,
+				77012859F0E442AEE9FFFCB4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hudly;
+			productName = Hudly;
+			productReference = F8CFBAEE1E1E9BDA00BE6C5E /* Hudly.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8CFBAE61E1E9BDA00BE6C5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Peter Shearer";
+				TargetAttributes = {
+					F8CFBAED1E1E9BDA00BE6C5E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XV5UP6YVSA;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F8CFBAE91E1E9BDA00BE6C5E /* Build configuration list for PBXProject "Hudly" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8CFBAE51E1E9BDA00BE6C5E;
+			productRefGroup = F8CFBAEF1E1E9BDA00BE6C5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8CFBAED1E1E9BDA00BE6C5E /* Hudly */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8CFBAEC1E1E9BDA00BE6C5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8CFBAFC1E1E9BDA00BE6C5E /* LaunchScreen.storyboard in Resources */,
+				F8CFBAF91E1E9BDA00BE6C5E /* Assets.xcassets in Resources */,
+				F8CFBAF71E1E9BDA00BE6C5E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DD986C375543405BD063288 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hudly/Pods-Hudly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		22639101386B29521314273F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		77012859F0E442AEE9FFFCB4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hudly/Pods-Hudly-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8CFBAEA1E1E9BDA00BE6C5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8CFBAF41E1E9BDA00BE6C5E /* ViewController.swift in Sources */,
+				F8CFBAF21E1E9BDA00BE6C5E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F8CFBAF51E1E9BDA00BE6C5E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8CFBAF61E1E9BDA00BE6C5E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8CFBAFA1E1E9BDA00BE6C5E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8CFBAFB1E1E9BDA00BE6C5E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8CFBAFE1E1E9BDA00BE6C5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8CFBAFF1E1E9BDA00BE6C5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8CFBB011E1E9BDA00BE6C5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFE6A11E73DD14C3D005371A /* Pods-Hudly.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XV5UP6YVSA;
+				INFOPLIST_FILE = Hudly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.swiftninja.Hudly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F8CFBB021E1E9BDA00BE6C5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE6764DFE85B05D5270DEA74 /* Pods-Hudly.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XV5UP6YVSA;
+				INFOPLIST_FILE = Hudly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.swiftninja.Hudly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8CFBAE91E1E9BDA00BE6C5E /* Build configuration list for PBXProject "Hudly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8CFBAFE1E1E9BDA00BE6C5E /* Debug */,
+				F8CFBAFF1E1E9BDA00BE6C5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8CFBB001E1E9BDA00BE6C5E /* Build configuration list for PBXNativeTarget "Hudly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8CFBB011E1E9BDA00BE6C5E /* Debug */,
+				F8CFBB021E1E9BDA00BE6C5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8CFBAE61E1E9BDA00BE6C5E /* Project object */;
+}
