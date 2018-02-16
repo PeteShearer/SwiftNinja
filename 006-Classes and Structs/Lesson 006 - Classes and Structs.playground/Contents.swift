@@ -1,6 +1,6 @@
 //String is a class
 var blogName = "Swift Ninja"
-blogName.lowercaseString
+blogName.lowercased()
 
 /*
  // Without init method
@@ -28,8 +28,7 @@ myCar.color = "Blue"
 myCar.engineSize = "4 cylinder"
 
 myCar.go()
- */
-
+*/
 // With init method
 class Car {
     var make: String
@@ -78,8 +77,7 @@ var myPlane = Plane(make: "Boeing", model: "747")
 myPlane.go()
 
 
-var carOne = Car(make: "Ford", model: "Pinto", modelYear: 1977,
-                numberOfDoors: 2, color: "Blue", engineSize: "4 cylinder")
+var carOne = Car(make: "Ford", model: "Pinto", modelYear: 1977, numberOfDoors: 2, color: "Blue", engineSize: "4 cylinder")
 var carTwo = carOne
 var carThree = carOne
 
@@ -109,6 +107,3 @@ print(carThree.color) // prints Black
 print(planeOne.model) // prints 757
 print(planeTwo.model) // prints 747
 print(planeThree.model) // prints 747
-
-
-

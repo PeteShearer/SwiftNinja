@@ -11,9 +11,9 @@ func dynamicSumming(addends: Int...) -> Int {
     return sum;
 }
 
-print(dynamicSumming(7))
-print(dynamicSumming(1,2))
-print(dynamicSumming(7777,8888,9999))
+print(dynamicSumming(addends: 7))
+print(dynamicSumming(addends: 1,2))
+print(dynamicSumming(addends: 7777,8888,9999))
 
 
 // Tuples as return types
@@ -46,7 +46,7 @@ var localSummer = createSummingFunction()
 print(localSummer(42, 77)) // <-- Oddly, no need to name parameters
 
 // Functions can be variables, can they be parameters? Yes
-func applyPricing(initialPrices: [Double], pricingFunction: Double -> Double) -> [Double] {
+func applyPricing(initialPrices: [Double], pricingFunction: (Double) -> Double) -> [Double] {
     var customerPricing = [Double]()
     
     for price in initialPrices {
@@ -72,8 +72,8 @@ func tenPercentOff (price: Double) -> Double {
 // a "shopping cart" of prices
 var cart = [44.96, 7.24, 29.07]
 
-var standardCustomerCart = applyPricing(cart, pricingFunction: retailPrice)
-var favoredCustomerCart = applyPricing(cart, pricingFunction: tenPercentOff)
+var standardCustomerCart = applyPricing(initialPrices: cart, pricingFunction: retailPrice)
+var favoredCustomerCart = applyPricing(initialPrices: cart, pricingFunction: tenPercentOff)
 
 
 

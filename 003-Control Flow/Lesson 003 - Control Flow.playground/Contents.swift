@@ -113,11 +113,13 @@ repeat {
 }
 while repeatCounter < 30
 
-
+// C-Style for statement has been removed in Swift 3
+/*
 for var i = 1; i <= 10; i += 1 {
     print(i)
 }
-
+*/
+ 
 // 1-10 (inclusive)
 for i in 1...10 {
     print(i)

@@ -2,7 +2,7 @@ func sayHello(name: String) -> String {
     return "Hello, " + name
 }
 
-print(sayHello("Dustin"))
+print(sayHello(name: "Dustin"))
 
 func sayHelloIndependently(name: String) {
     print("Hello, \(name)")
@@ -19,7 +19,7 @@ func sayHelloIndependently(name: String) -> Void {
 }
  */
 
-sayHelloIndependently("Urban")
+sayHelloIndependently(name: "Urban")
 
 func addNumbers(firstAddend: Int, secondAddend: Int) -> Int {
     return firstAddend + secondAddend
@@ -28,12 +28,12 @@ func addNumbers(firstAddend: Int, secondAddend: Int) -> Int {
 // Doesn't Work: error: missing argument label 'secondAddend:' in call addNumbers(1, 6)
 // addNumbers(1, 6)
 
-// Also doesn't work
+// Also doesn't work (Update: This now DOES work as Apple decided the unnamed 1st param was kind of silly)
 // error: extraneous argument label 'firstAddend:' in call addNumbers(firstAddend: 1, secondAddend: 6)
 // addNumbers(firstAddend: 1, secondAddend: 6)
 
 // The right way
-addNumbers(1, secondAddend: 6)
+addNumbers(firstAddend: 1, secondAddend: 6)
 
 // A Better Way
 

@@ -24,14 +24,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return 1
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // return number of rows
         return b1gTeams.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // dequeue a cell to use (if this is the first time, we will get a shiny new one)
-        let cell = tableView.dequeueReusableCellWithIdentifier("team", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "team", for: indexPath)
         
         let team = b1gTeams[indexPath.row]
         
@@ -40,10 +40,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         // Un-highlight the row
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
         
         // Print out the team to show this is working
         let team = b1gTeams[indexPath.row]

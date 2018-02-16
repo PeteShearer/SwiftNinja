@@ -34,7 +34,7 @@ for podcast in favoritePodcasts {
 }
 
 for podcast in favoritePodcasts {
-    var host = podcastHosts[podcast]!
+    let host = podcastHosts[podcast]!
     print("\(podcast) is hosted by \(host)")
 }
 
