@@ -31,11 +31,11 @@ print("Swift".DoubleMeUp()) // <-- Prints SwiftSwift
 
 extension String {
     var squareOfLength: Int {
-        return self.characters.count*self.characters.count
+        return self.count*self.count
     }
     
     var firstLetter: String {
-        if let returnValue = self.characters.first {
+        if let returnValue = self.first {
             return String(returnValue)
         }
         else {

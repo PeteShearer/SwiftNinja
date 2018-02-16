@@ -14,7 +14,7 @@ func divideFiveBy(theNumber dividend: Int) -> Int {
 }
  */
 
-enum MathError: ErrorType {
+enum MathError: Error {
     case DivideByZero
     case TooLarge
 }

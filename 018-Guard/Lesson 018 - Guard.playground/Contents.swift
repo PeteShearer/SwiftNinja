@@ -1,4 +1,4 @@
-enum MathError: ErrorType {
+enum MathError: Error {
     case DivideByZero
     case TooLarge
 }

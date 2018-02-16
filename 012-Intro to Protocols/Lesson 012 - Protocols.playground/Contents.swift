@@ -62,7 +62,7 @@ func usingAProtocolAsAParameter(input: BiggieSize) {
     print(input.doubleUp)
 }
 
-usingAProtocolAsAParameter("Pete") // <-- prints PetePete
+usingAProtocolAsAParameter(input: "Pete") // <-- prints PetePete
 
 protocol A {
     var foo: String {get set}
@@ -74,7 +74,7 @@ protocol B {
     func talkAlso() -> Void
 }
 
-func demonstrateIntersection(input: protocol<A, B>) -> Void {
+func demonstrateIntersection(input: A & B) -> Void {
     input.talk()
     input.talkAlso()
 }
@@ -130,7 +130,7 @@ var bothVariable = hasBoth(foo: "FOOOO!", bar: "BARRRR!")
 // error: argument type 'onlyHasB' does not conform to expected type 'protocol<A, B>'
 // demonstrateIntersection(bVariable)
 
-demonstrateIntersection(bothVariable) // <-- WORKS!
+demonstrateIntersection(input: bothVariable) // <-- WORKS!
 
 
 

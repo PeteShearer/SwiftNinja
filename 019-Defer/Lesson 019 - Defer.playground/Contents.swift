@@ -40,7 +40,7 @@ func singleCleanup(arg:Int) {
 
 // Other times, the cleanup tasks can build.  You only need to cleanup an object or resource after you declare it.
 
-func selectiveCleanup(arg:Int) {
+func selectiveCleanup(_ arg:Int) {
     defer {
         print ("Function Level Cleanup")
     }
@@ -49,7 +49,7 @@ func selectiveCleanup(arg:Int) {
         return;
     }
     
-    let bundle = NSBundle.mainBundle()
+    let bundle = Bundle.main
     defer {
         print("Cleaning up after the bundle call")
     }
@@ -60,7 +60,7 @@ func selectiveCleanup(arg:Int) {
         return
     }
     
-    var distantPast = NSDate.distantPast()
+    var distantPast = NSDate.distantPast
     defer {
         print("Cleaning up after the NSDate call")
     }

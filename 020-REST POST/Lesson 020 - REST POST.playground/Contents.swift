@@ -1,25 +1,25 @@
 
 import UIKit
 
-import XCPlayground // <-- This is just for the playground
-XCPlaygroundPage.currentPage.needsIndefiniteExecution = true // <-- And so is this, so it will continue to execute so we can get our results back
+import PlaygroundSupport // <-- This is just for the playground
+PlaygroundPage.current.needsIndefiniteExecution = true // <-- And so is this, so it will continue to execute so we can get our results back
 
-let url = "http://reqres.in/api/users"
-let session = NSURLSession.sharedSession()
-
-let request = NSMutableURLRequest(URL: NSURL(string: url)!)
-request.HTTPMethod = "POST"
+var request = URLRequest(url: URL(string:"https://reqres.in/api/users")!)
+request.httpMethod = "POST"
+request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
 
 let paramString = "username=Voltron&role=Defender of the Universe"
-request.HTTPBody = paramString.dataUsingEncoding(NSUTF8StringEncoding)
+request.httpBody = paramString.data(using: .utf8)
 
-let task = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in
+let config = URLSessionConfiguration.default
+let session = URLSession(configuration: config)
+let task = session.dataTask(with: request) { (data, response, responseError) in
     if let jsonData = data {
-        let options = NSJSONReadingOptions()
+        let options = JSONSerialization.ReadingOptions()
         do {
-            let jsonArray = try NSJSONSerialization.JSONObjectWithData(jsonData, options: options) as! [String:AnyObject]
+            let jsonArray = try JSONSerialization.jsonObject(with: jsonData, options: options) as! [String:AnyObject]
             
-            if let userId = jsonArray["id"], username = jsonArray["username"], role = jsonArray["role"], createDate = jsonArray["createdAt"] {
+            if let userId = jsonArray["id"],  let username = jsonArray["username"], let role = jsonArray["role"], let createDate = jsonArray["createdAt"] {
                 print("The id was \(userId), the username was \(username), the role was \(role), and the record was created on \(createDate)")
             }
             else {
@@ -33,6 +33,5 @@ let task = session.dataTaskWithRequest(request, completionHandler: {data, respon
     else {
         print ("We didn't get back data")
     }
-})
-
+}
 task.resume()

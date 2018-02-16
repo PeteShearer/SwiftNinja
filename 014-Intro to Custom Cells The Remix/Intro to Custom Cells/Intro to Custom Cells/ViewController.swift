@@ -20,19 +20,19 @@ class ViewController: UITableViewController {
         pics = ["Goat.png", "Hippo.png", "Lion.png", "Pig.png"]
         
         let nib = UINib(nibName: "NinjaCell", bundle: nil)
-        tableView.registerNib(nib, forCellReuseIdentifier: "ninja")
+        tableView.register(nib, forCellReuseIdentifier: "ninja")
     }
-
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return names.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("ninja", forIndexPath: indexPath) as! NinjaCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ninja", for: indexPath) as! NinjaCell
         
         let name = names[indexPath.row]
         let pic = pics[indexPath.row]
@@ -41,6 +41,5 @@ class ViewController: UITableViewController {
         
         return cell
     }
-
 }
 
